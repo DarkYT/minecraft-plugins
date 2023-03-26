@@ -1,0 +1,7 @@
+name: StaffMode
+version: 0.1
+author: Dark
+main: fr.dark.staffmode.StaffMode
+commands:
+  staffmode:
+    aliases: [sm, smode]

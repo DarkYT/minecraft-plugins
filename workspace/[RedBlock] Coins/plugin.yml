@@ -1,0 +1,7 @@
+name: Coins
+main: fr.shiick.coins.Coins
+author: Shiick
+version: 1.0
+commands:
+  coins:
+    aliases: [credits]

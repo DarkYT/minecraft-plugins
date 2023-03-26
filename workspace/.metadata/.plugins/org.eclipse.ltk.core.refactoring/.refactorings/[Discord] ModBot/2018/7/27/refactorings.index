@@ -1,0 +1,6 @@
+1530630426291	Move compilation unit
+1530631506565	Rename compilation unit 'BotCommands.java'
+1530637331003	Rename type 'CommandManager'
+1530638236519	Encapsulate field 'commandMap'
+1530638303843	Rename type 'ModCommand'
+1530638642615	Encapsulate field 'commandMap'

@@ -1,0 +1,6 @@
+name: StellHDV
+version: 1.0
+author: Stellaria
+main: fr.stellaria.hdv.Core
+commands:
+  hdv:

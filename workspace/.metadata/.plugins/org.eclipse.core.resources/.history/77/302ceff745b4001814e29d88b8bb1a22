@@ -1,0 +1,87 @@
+package fr.dark.stats;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import fr.dark.stats.commands.statsCommand;
+import fr.dark.stats.listeners.eventsListener;
+
+public class Stats extends JavaPlugin {
+
+	public static SQLConnexion sql;
+	public Map<Player, Long> joinTime = new HashMap<>();
+	public Map<Player, Integer> placed = new HashMap<>();
+	public Map<Player, Integer> broken = new HashMap<>();
+
+	@Override
+	public void onEnable() {
+		PluginManager pm = getServer().getPluginManager();
+		pm.registerEvents(new eventsListener(this), this);
+
+		getCommand("statistiques").setExecutor(new statsCommand(this));
+
+		saveDefaultConfig();
+
+		String protocol = getConfig().getString("MySQL.Protocol");
+		String host = getConfig().getString("MySQL.Host");
+		String database = getConfig().getString("MySQL.Database");
+		String username = getConfig().getString("MySQL.Username");
+		String password = getConfig().getString("MySQL.Password");
+
+		sql = new SQLConnexion(protocol, host, database, username, password, this);
+		sql.connection();
+		
+		for(Player pl : Bukkit.getOnlinePlayers()) {
+			joinTime.put(pl, System.currentTimeMillis());
+			broken.put(pl, 0);
+			placed.put(pl, 0);
+		}
+	}
+	
+	@Override
+	public void onDisable() {
+		for(Player pl : Bukkit.getOnlinePlayers()) {
+			if(joinTime.containsKey(pl)) {
+				long now = System.currentTimeMillis();
+				long arrived = joinTime.get(pl);
+				long all = Long.parseLong(Stats.sql.getSpendTime(pl.getUniqueId().toString()));
+				Stats.sql.setSpendTime(pl, (now-arrived) + all);
+				Stats.sql.setBrokenBlocks(pl, Stats.sql.getBrokenBlocks(pl.getUniqueId().toString())+broken.get(pl));
+				Stats.sql.setPlacedBlocks(pl, Stats.sql.getPlacedBlocks(pl.getUniqueId().toString())+placed.get(pl));
+				joinTime.remove(pl);
+			}
+		}
+	}
+
+	public String timePlayer(Long date) {
+
+		long seconds = date / 1000 % 60;
+		long minutes = date / (60 * 1000) % 60;
+		long hours = date / (60 * 60 * 1000) % 24;
+		long days = date / (24 * 60 * 60 * 1000);
+
+		String fulldate = days + "j " + hours + "h " + minutes + "m " + seconds + "s";
+		return fulldate;
+	}
+	
+	public String moyenne(Long date) {
+		long days = date / (24 * 60 * 60 * 1000);
+		Bukkit.getPlayer("DarkYT_").sendMessage("Date: "+date);
+		Bukkit.getPlayer("DarkYT_").sendMessage("Day: "+days);
+		Bukkit.getPlayer("DarkYT_").sendMessage("Div: "+date/days);
+		long moyenne;
+		if(days > 0) {
+			moyenne = date / days;
+		}else {
+			moyenne = date;
+		}
+		Bukkit.getPlayer("DarkYT_").sendMessage("Moy: "+moyenne);
+		return timePlayer(moyenne);
+	}
+
+}

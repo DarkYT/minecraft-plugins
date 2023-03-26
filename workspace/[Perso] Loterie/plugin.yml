@@ -1,0 +1,7 @@
+name: EarthLoterie
+version: 1.0
+author: DarkYT
+main: fr.dark.loterie.Loterie
+commands:
+  loterie:
+    aliases: [lt]

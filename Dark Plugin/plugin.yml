@@ -1,0 +1,7 @@
+name: DarkPlugin
+version: 1.0
+author: Dark
+main: fr.darkyt.dark.Main
+commands:
+  report:
+  helpme:

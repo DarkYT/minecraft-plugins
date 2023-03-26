@@ -1,0 +1,7 @@
+main: fr.earthsky.silkspawner.SilkSpawner
+name: EarthSpawner
+version: 1.0
+author: EarthSky
+commands:
+  earthspawner:
+    aliases: [es]

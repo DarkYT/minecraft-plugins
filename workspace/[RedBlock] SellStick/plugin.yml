@@ -1,0 +1,7 @@
+name: SellStick
+version: 0.1
+author: Dark
+main: fr.dark.sellstick.Core
+depend: [Vault]
+commands:
+  sellstick:

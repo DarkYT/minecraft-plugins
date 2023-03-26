@@ -1,0 +1,20 @@
+SemiRP:
+  Join:
+    Broadcast: "&a[&2+&a] &2<player> vient de se connecter dans son royaume !"
+  Leave:
+    Message: "&c[&4+&c] &4<player> vient de se déconnecter de son royaume !"
+  Jobs:
+    InventoryName: "§8Voici les métiers disponibles"
+  Spawn:
+  Command:
+    Reload: "&a[&2SemiRP&a] &2Reload effectué !"
+    Spawn:
+      Set: "&a[&2SemiRP&a] &2Le spawn est désormais définit à votre position !"
+      Teleport: "&a[&2SemiRP&a] &2Vous venez de vous téléporter au spawn !"
+    
+MySQL:
+  Protocol: "jdbc:mysql://"
+  Host: "localhost"
+  Database: "dev"
+  Username: "root"
+  Password: "root"

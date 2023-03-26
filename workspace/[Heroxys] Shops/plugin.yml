@@ -1,0 +1,22 @@
+name: AltyShops
+author: thephoenix2feu
+version: 1.0
+main: fr.thephoenix2feu.shop.plugin
+depend: [Vault]
+commands:
+  site:
+    description: Envoie le lien de notre site web
+  boutique:
+    description: Envoie le lien de notre boutique
+  chaine:
+    description: Envoie le lien de notre chaine
+  discord:
+    description: Envoie le lien de notre discord
+  arena:
+    description: Téléporte à l'arena
+  setspawnarena:
+    description: Set le point de téléportation de l'arena
+  shop:
+    description: Ouvre le shop
+  adminshop:
+    description: Gérer les plots

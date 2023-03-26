@@ -1,0 +1,6 @@
+name: RedFurnace
+version: 0.1
+author: Dark
+main: fr.redblock.furnace.Core
+commands:
+  furnace:

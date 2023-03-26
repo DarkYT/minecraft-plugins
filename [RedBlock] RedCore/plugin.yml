@@ -1,0 +1,12 @@
+main: fr.shiick.redcore.RedCore
+author: Shiick
+version: 1.0
+name: RedCore
+commands:
+  shiickisdabest:
+    aliases: [sidb]
+  killonoob:
+    aliases: [kon]
+  nethersethome:
+    aliases: [nsethome]
+  corereload:

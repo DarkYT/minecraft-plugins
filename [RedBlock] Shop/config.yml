@@ -1,0 +1,150 @@
+MySQL:
+  Protocol: "jdbc:mysql://"
+  Host: "localhost"
+  Database: "Shiick"
+  Username: "root"
+  Password: "Vm8pR2KWwJ5x"
+  ID: 0
+Message:
+  Reload: "&aLa configuration du plugin a été rechargée."
+  NoPerm: "&cVous n'avez pas la permission d'exécuter cette commande."
+  Buy:
+    CoinsMissing: "&cVous n'avez pas assez de crédits ! Il vous manque %coins% crédits."
+    Broadcast: "&9[&2Shop&9] &e%player% &7vient d'acheter &c%product% &7! Merci à lui !"
+    Player: "&9[&2Shop&9] &7Vous venez d'acheter &c%product% &7pour &e%price%&7 crédits."
+    Transaction: "&8ID de la transaction &7%id%&8. Gardez cet ID de côté en cas de problème."
+Menu:
+  Main:
+    Name: "&b&lBoutique"
+    Size: 27
+    Categories:
+      Ranks:
+        Name: "&3&lGrades"
+        Type: MENU
+        Menu: RANKS
+        Lore: 
+          1: "&7Description à venir..."
+        Item: IRON_CHESTPLATE
+        Data: 0
+        Position: 11
+  Ranks:
+    Name: "&3&lGrades"
+    Size: 27
+    Categories:
+      Mage:
+        Name: "&d&lMage"
+        Type: MENUDUO
+        Rank: mage
+        Lore: 
+          1: "&7Description à venir..."
+        Item: LEATHER_CHESTPLATE
+        Price: 10
+        Color:
+          R: 152
+          G: 69
+          B: 197
+        Data: 0
+        Position: 11
+      Ange:
+        Name: "&e&lAnge"
+        Type: MENUDUO
+        Rank: ange
+        Lore: 
+          1: "&7Description à venir..."
+        Item: LEATHER_CHESTPLATE
+        Price: 20
+        Color:
+          R: 222
+          G: 178
+          B: 51
+        Data: 0
+        Position: 14
+      Dieu:
+        Name: "&b&lDieu"
+        Type: MENUDUO
+        Rank: dieu
+        Lore: 
+          1: "&7Description à venir..."
+        Item: LEATHER_CHESTPLATE
+        Price: 30
+        Color:
+          R: 29
+          G: 193
+          B: 189
+        Data: 0
+        Position: 17
+  BuyableRanks:
+    Name: "&8Confirmer l'achat"
+    Size: 27
+    Categories:
+      Confirm:
+        Name: "&aAcheter &9%product%"
+        Type: BUYRANK
+        Lore:
+          1: "&e%price% &8crédits"
+        Item: SLIME_BALL
+        Data: 0
+        Position: 11
+      Cancel:
+        Name: "&cAnnuler l'achat"
+        Type: MENU
+        Menu: RANKS
+        Lore:
+          1: "&7Retour en arrière"
+        Item: MAGMA_CREAM
+        Data: 0
+        Position: 17
+      Infos:
+        Name: "&9Informations sur %product%"
+        Type: MENUITEM
+        Menu: INFOS
+        Lore:
+          1: "&7Voir les informations sur %product%"
+        Item: BOOK
+        Data: 0
+        Position: 14
+  Infos:
+    Name: "&9Informations"
+    Size: 9
+    Categories:
+      Lobby:
+        Name: "&bLobby"
+        Type: NOTHING
+        Lore:
+          1: "&7A définir..."
+        Item: BED
+        Data: 14
+        Position: 1
+      Skyblock:
+        Name: "&6Skyblock"
+        Type: NOTHING
+        Lore:
+          1: "&7A définir..."
+        Item: DIRT
+        Data: 2
+        Position: 2
+      SemiRP:
+        Name: "&2RolePlay"
+        Type: NOTHING
+        Lore:
+          1: "&7A définir..."
+        Item: DIAMOND_HOE
+        Data: 0
+        Position: 3
+      CTF:
+        Name: "&eCaptureTheFlag"
+        Type: NOTHING
+        Lore:
+          1: "&7A définir..."
+        Item: BANNER
+        Data: 1
+        Position: 4
+      Cancel:
+        Name: "&cRetour"
+        Type: MENU
+        Menu: RANKS
+        Lore:
+          1: "&7Retour en arrière"
+        Item: ARROW
+        Data: 0
+        Position: 9

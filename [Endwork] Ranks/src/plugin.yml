@@ -1,0 +1,11 @@
+name: Ranks
+version: 1.0
+api-version: 1.13
+depend: [EndAPI]
+author: Dark
+main: fr.dark.ranks.RankCore
+commands:
+  rank:
+  ranks:
+  permission:
+    aliases: [perm]

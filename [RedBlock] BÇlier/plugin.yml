@@ -1,0 +1,6 @@
+name: Ram
+version: 0.0.1
+author: DarkYT
+main: fr.dark.ram.Core
+commands:
+  ram:

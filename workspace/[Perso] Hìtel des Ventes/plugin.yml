@@ -1,0 +1,7 @@
+name: HDV
+version: 0.1
+author: DarkYT
+main: fr.dark.hdv.HDV
+depends: [Citizens]
+commands:
+  hdv:

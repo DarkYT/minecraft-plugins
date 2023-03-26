@@ -1,0 +1,35 @@
+BedWars:
+  Config:
+    ActiveMap:
+      World: "bedwars_map"
+      Spawn: "5:75:15"
+      Diamond:
+        - "-24:39:15"
+        - "40:39:15"
+      Emerald:
+        - "8:34:13"
+      TeamRed:
+        Color: "red"
+        Tag: "&c"
+        Name: "Rouge"
+        WoolData: 14
+        MaxSize: 1
+        Spawn: "2:34:88"
+        OresSpawn: "-7:34:88"
+        PNJSpawn:
+          - "23:34:92:90.6:22_&eIlébo"
+          - "23:34:84:90:8_&aIlébon"
+      TeamBlue:
+        Color: "blue"
+        Tag: "&9"
+        Name: "Bleu"
+        WoolData: 11
+        MaxSize: 1
+        Spawn: "14:34:-57"
+        OresSpawn: "23:34:-58"
+        PNJSpawn:
+          - "-7:34:-62:-90:13_&eIlébo"
+          - "-7:34:-54:-90:6_&aIlébon"
+    Lobby:
+      World: "world"
+      Spawn: "-474:11:-1462"

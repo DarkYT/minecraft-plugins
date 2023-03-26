@@ -1,0 +1,6 @@
+name: Doors
+version: 1.0
+author: RedBlock
+main: fr.redblock.doors.Core
+commands:
+  doors:

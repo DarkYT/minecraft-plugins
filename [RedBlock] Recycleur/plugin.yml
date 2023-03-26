@@ -1,0 +1,6 @@
+main: fr.shiick.recycleur.Recycleur
+version: 1.0
+author: Shiick
+name: Recycleur
+commands:
+  recycleur:

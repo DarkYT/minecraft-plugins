@@ -1,0 +1,67 @@
+StaffMode:
+
+  # To set basic params of the plugin
+  Config:
+    NoPerm: "&l&8[&cStaffMode&8] &r&cVous n'avez pas les permissions requises !"
+    Disable: "&l&8[&cStaffMode&8] &r&c&lDésactivation &r&fdu Staff Mode"
+    Enable: "&l&8[&cStaffMode&8] &r&a&lActivation &r&fdu Staff Mode"
+
+  #Configure Items type and name
+  Inventory:
+    Vanish:
+      Disable:
+        Type: INK_SACK
+        Data: 7
+        DispName: "&cVanish &8(&4&lOFF&r&8) &o(Right Click)"
+        Enchant: true
+      Enable:
+        Type: INK_SACK
+        Data: 14
+        DispName: "&cVanish &8(&2&lON&r&8) &o(Right Click)"
+        Enchant: true
+    InvSee:
+      Type: SKULL_ITEM
+      Data: 3
+      Owner: "Steve"
+      DispName: "&cInvSee &8&o(Right Click)"
+      Enchant: true
+    EnderChest:
+      Type: ENDER_CHEST
+      Data: 0
+      DispName: "&cEnderSee &8&o(Right Click)"
+      Enchant: true
+    Report:
+      Type: BARRIER
+      Data: 0
+      DispName: "&cReport &8&o(Right Click)"
+      Enchant: true
+    Freeze:
+      Type: PACKED_ICE
+      Data: 0
+      DispName: "&cFreeze &8&o(Right Click)"
+      Enchant: true
+    Fly:
+      Disable:
+        Type: FEATHER
+        Data: 0
+        DispName: "&cFly &8(&l&4OFF&r&8) &o(Right Click)"
+        Enchant: true
+      Enable:
+        Type: FEATHER
+        Data: 0
+        DispName: "&cFly &8(&l&2ON&r&8) &o(Right Click)"
+        Enchant: true
+    RandTP:
+      Type: ENDER_PEARL
+      Data: 0
+      DispName: "&cRandom TP &8&o(Right Click)"
+      Enchant: true
+      
+  #Configuration of severals things
+  Freeze:
+    FreezeMessage:
+      - "&8&m-------------------------------"
+      - "&8- Vous avez été freeze par &l&c{PLAYER}"
+      - "&8- Si vous essayez de déco, vous vous exposez à des sanctions"
+      - "&8&m-------------------------------"
+    Sanction: "tempban {PLAYER} 7d Déco suite a un freeze"

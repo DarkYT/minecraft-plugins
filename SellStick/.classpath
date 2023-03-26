@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/blizz/Documents/API/spigot-1.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/blizz/Documents/API/Vault1.7-1.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/blizz/Documents/API/Essentials.jar"/>
+	<classpathentry kind="lib" path="C:/Users/blizz/Documents/API/ASkyblock.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

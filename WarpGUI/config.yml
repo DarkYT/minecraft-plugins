@@ -1,0 +1,52 @@
+Spawn: "Ile"
+corrompu:
+  x: -257
+  y: 160
+  z: 1741
+vampire:
+  x: -273
+  y: 198
+  z: 1751
+demon:
+  x: -259
+  y: 160
+  z: 1731
+jump:
+  x: -250
+  y: 156
+  z: 1778
+laby:
+  x: -248
+  y: 122
+  z: 1854
+farm:
+  x: -223
+  y: 111
+  z: 1765
+nether:
+  world: Nether
+  x: -39
+  y: 22
+  z: -17
+shop:
+  x: -263
+  y: 116
+  z: 1783
+generator:
+  x: -233
+  y: 115
+  z: 1798
+vaudou:
+  x: -259
+  y: 115
+  z: 1765
+staff:
+  x: -258
+  y: 104
+  z: 1787
+legendaire:
+  x: -247
+  y: 114
+  z: 1759
+ 
+  

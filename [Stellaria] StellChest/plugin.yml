@@ -1,0 +1,6 @@
+name: StellChest
+version: 1.0
+author: Stellaria
+main: fr.stellaria.chest.Core
+commands:
+  chest:

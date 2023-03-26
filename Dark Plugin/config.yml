@@ -1,0 +1,15 @@
+commands:
+  report:
+    error: "&cLa commande est: /report <nom du joueur> <raison>"
+    cooldown: "&l&fTu dois attendre encore &4{0}s &fpour report un joueur"
+    validate: "&l&f{0} a report &4{1} &fpour &4{2}"
+  helpme:
+    error: "&cLa commande est: /helpme <demande>"
+    validate: "&l&a{0} demande de l'aide >> &f{1}"
+listeners:
+  repair:
+    error1: "&cVous n'avez pas besoin de réparer votre item"
+    error2: "&4 Vous n'avez pas assez de money: il vous faut 32 diamants"
+    validate: "&2Vous avez réparé votre Item !"
+  tagchat:
+    tag: "&cLe joueur {0} vous a mentionney !"

@@ -1,0 +1,6 @@
+name: ClassSystem
+version: 1.0
+author: BlizzRPG
+main: fr.blizzrpg.classsystem.ClassAPI
+commands:
+  classe:

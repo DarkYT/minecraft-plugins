@@ -1,0 +1,6 @@
+name: News
+version: 1.0
+author: Dark
+main: fr.darkyt.news.News
+commands:
+  news:

@@ -1,0 +1,9 @@
+main: fr.shiick.redhub.RedHub
+author: Shiick
+name: RedHub
+version: 1.0
+commands:
+  menu:
+  hubspawn:
+  hubsetspawn:
+  hubreload:

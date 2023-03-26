@@ -1,0 +1,12 @@
+main: fr.basiccommandsbungee.basiccommands.BasicCommands
+name: UtilsCommands
+version: 1.0
+author: Shiick
+commands:
+  teamspeak:
+    aliases: [ts]
+  site:
+    aliases: [forum]
+  twitter:
+  youtube:
+    aliases: [yt]

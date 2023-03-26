@@ -1,0 +1,6 @@
+name: StellConvert
+version: 1.0
+author: Stellaria
+main: fr.stellaria.convert.Core
+commands:
+  convert:

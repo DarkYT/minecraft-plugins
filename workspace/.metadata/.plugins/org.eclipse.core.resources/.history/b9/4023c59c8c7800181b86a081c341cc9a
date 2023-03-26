@@ -1,0 +1,63 @@
+package fr.dark.loterie.commands;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
+
+import fr.dark.loterie.Loterie;
+import net.md_5.bungee.api.ChatColor;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.TextComponent;
+import net.milkbowl.vault.economy.EconomyResponse;
+
+public class loterieCommand implements CommandExecutor {
+
+	Loterie core;
+	public loterieCommand(Loterie core) {
+		this.core = core;
+	}
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
+		if(sender instanceof Player) {
+			Player s = (Player) sender;
+			if(args.length == 0) {
+				s.sendMessage("§6Etes-vous sûr de vouloir acheter un ticket pour la loterie ?");
+				TextComponent message = new TextComponent("[Oui] ");
+				message.setColor(ChatColor.GREEN);
+				message.setBold(true);
+				message.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/lt validate"));
+				TextComponent no = new TextComponent( "[Non]" );
+				no.setColor( ChatColor.RED );
+				no.setBold( true );
+				no.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/lt cancel" ) );
+				message.addExtra(no);
+				s.spigot().sendMessage(message);
+				return true;
+			}
+			
+			if(args.length == 1) {
+				if(args[0].equalsIgnoreCase("validate")) {
+					int price = core.getConfig().getInt("Loterie.TicketPrice");
+					EconomyResponse rp = Loterie.econ.withdrawPlayer(s, price);
+					if(rp.transactionSuccess()) {
+						YamlConfiguration yc = YamlConfiguration.loadConfiguration(Loterie.confFile);
+						return true;
+					}else {
+						s.sendMessage("§cVous n'avez pas assez de coins sur votre compte");
+						return false;
+					}
+				}else if(args[0].equalsIgnoreCase("cancel")) {
+					s.sendMessage("§aVous venez d'annuler l'achat !");
+					return false;
+				}
+			}
+		}else {
+			sender.sendMessage("§cT'es une console, sale nooby --'");
+		}
+		return false;
+	}
+
+}

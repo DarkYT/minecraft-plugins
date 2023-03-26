@@ -1,0 +1,6 @@
+main: fr.shiick.warpgui.WarpGUI
+name: WarpGUI
+author: Shiick
+version: 1.0
+commands:
+  warp:

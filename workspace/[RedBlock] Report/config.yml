@@ -1,0 +1,38 @@
+Report:
+  Messages:
+    ReportSuccess: "&aVous avez report <target> avec succ�s !"
+    Error:
+      NotPlayer: "&4Ce joueur n'existe pas !"
+      IncorrectUsage: "&4Pour report un joueur, utilisez la commande: /report [Joueur] [Raison] [Preuve]"
+  ServerName: "scapinDev"
+  AReport: #Modifie juste le message, pas ce qui est entre crochet !
+    InventoryTitle: "&8Report Center"
+    Name: "&6Joueur: &e<joueur>"
+    NumberOfReports: "&6Nombre de reports: &e<int>"
+    Reporter: "&6Report par: &e<reporter>"
+    PlayerReportInventory:
+      Title: "&8Reports de <player>"
+      TitleConfirm: "&8Reports de" #Tu mets le même titre sans la variable !
+      Name: "&6Report n°<int>"
+      Server: "&6Serveur: &e<server>"
+      Raison: "&6Raison: &e<raison>"
+      Reporter: "&6Report par: &e<reporter>"
+      Left: "&6Click Gauche pour + d'infos"
+      Right: "&6Shift + Click Droit pour supprimer"
+    ChatMessage:
+      RemoveSuccess: "&a[&2Report&a] &2Vous avez supprimé avec succès le report de &a<player>"
+      Presentation: "&6Voici les informations concernant le report du joueur &e<player>:"
+      Server: "  &6-Le report a été fait sur le serveur &e<server>"
+      Raison: "  &6-La raison donnée pour le report est &e<raison>"
+      Reporter: "  &6-<player> a été report par &e<reporter>"
+      Preuve: "  &6-La preuve donnée por le report est &e<preuve>" 
+      Del: "&4Utilisation: /areport del [joueur/all]"
+      DelAllSuccess: "&a[&2Report&a] &2Vous avez supprimé avec succès les reports du serveur !"
+      DelPlayerSuccess: "&a[&2Report&a] &2Vous avez supprimé avec succès les reports de &a<player>"
+      
+MySQL:
+  Protocol: "jdbc:mysql://"
+  Host: "localhost"
+  Database: "Shiick"
+  Username: "root"
+  Password: "Vm8pR2KWwJ5x"

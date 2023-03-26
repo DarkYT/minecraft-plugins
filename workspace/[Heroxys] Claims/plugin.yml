@@ -1,0 +1,9 @@
+name: AltyClaims
+author: thephoenix2Feu
+version: 1.0
+main: fr.thephoenix2feu.claims.Plugin
+commands:
+  zone:
+    description: manage zone
+  section:
+    description: manage section

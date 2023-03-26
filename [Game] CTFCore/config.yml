@@ -1,0 +1,29 @@
+CTFCore:
+  Join:
+    Message: "&a[&2+&a] &2<player> vient de se connecter au serveur CTF !"
+    setCreaGMtoOp: true
+  Command:
+    Reload: "&a[&2CTF&a] &2Reload effectué !"
+    Editor:
+      Set: "&a[&2CTF&a] &2Vous êtes désormais Editeur !"
+      Remove: "&a[&2CTF&a] &2Vous n'êtes désormais plus Editeur !"
+    Spawn:
+      Set: "&a[&2CTF&a] &2Le spawn est désormais définie à votre position !"
+      Teleport: "&a[&2CTF&a] &2Vous venez de vous téléporter au spawn !"
+    Help:
+      Op:
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+        - "&6/ctf edit &eVous active/désactive le mode Edition du serveur"
+        - "&6/ctf setspawn &eDéfinie le spawn à votre position"
+        - "&6/ctf spawn &eVous téléporte au spawn"
+        - "&6/ctf help &eOuvre ce menu"
+        - "&6/ctf reload &eReload le plugin"
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+      notOp:
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+        - "&6/ctf spawn &eVous téléporte au spawn"
+        - "&6/ctf help &eOuvre ce menu"
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+    Deny:
+      Console: "&4Tu es une console, banane !"
+  Spawn:

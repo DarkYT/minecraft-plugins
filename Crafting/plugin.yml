@@ -1,0 +1,6 @@
+name: Crafting
+main: fr.shiick.crafting.Crafting
+author: Shiick
+version: 1.0
+commands:
+  crafting:

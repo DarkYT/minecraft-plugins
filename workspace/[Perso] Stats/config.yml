@@ -1,0 +1,6 @@
+MySQL:
+  Protocol: "jdbc:mysql://"
+  Host: "localhost"
+  Database: "dev"
+  Username: "root"
+  Password: "root"

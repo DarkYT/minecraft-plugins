@@ -1,0 +1,8 @@
+name: ZeCraftReserve
+version: 1.0
+author: thephoenix2feu
+main: fr.thephoenix2feu.plugin
+commands:
+  reserve:
+    description: Ouvre votre inventaire de reserve
+  getinv:

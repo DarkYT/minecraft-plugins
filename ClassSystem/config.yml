@@ -1,0 +1,56 @@
+XP:
+  Needed: 1000
+  Slime: 5
+  Silverfish: 5
+  Endermite: 5
+  Bat: 5
+  MagmaCube: 5
+  Pig: 5
+  Cow: 5
+  Sheep: 5
+  Ocelot: 5
+  Squid: 5
+  Chicken: 5
+  Wolf: 5
+  Mooshroom: 5
+  Horse: 5
+  Rabbit: 5
+  Zombie: 10
+  Creeper: 10
+  Squelette: 10
+  CaveSpider: 10
+  Spider: 10
+  Pigman: 10
+  Enderman: 15
+  Blaze: 15
+  Ghast: 15
+  Guardian: 15
+  Witch: 15
+  Wither: 100
+  EnderDragon: 150
+Spawn:
+  World: Map
+  Epeiste:
+    x: 41
+    y: 75
+    z: 257
+    yaw: 90
+    pitch: 20
+  Barbare:
+    x: 41
+    y: 75
+    z: 247
+    yaw: 90
+    pitch: 20
+  Travailleur:
+    x: 41
+    y: 75
+    z: 242
+    yaw: 90
+    pitch: 20
+  Archer:
+    x: 41
+    y: 75
+    z: 262
+    yaw: 90
+    pitch: 20

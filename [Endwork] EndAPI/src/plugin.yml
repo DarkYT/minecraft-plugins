@@ -1,0 +1,4 @@
+name: EndAPI
+version: 1.0
+author: Endwork
+main: com.endwork.api.APICore

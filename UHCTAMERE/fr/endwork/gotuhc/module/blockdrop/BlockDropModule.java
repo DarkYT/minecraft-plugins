@@ -1,0 +1,81 @@
+package fr.endwork.gotuhc.module.blockdrop;
+
+import fr.endwork.gotuhc.GameCore;
+import fr.endwork.gotuhc.module.IModule;
+import fr.endwork.gotuhc.module.LifeCycle;
+import fr.endwork.gotuhc.module.Module;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.block.Block;
+import org.bukkit.entity.ExperienceOrb;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.HandlerList;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockBreakEvent;
+
+@Module(lifeCycle = LifeCycle.SERVER)
+public class BlockDropModule implements IModule, Listener {
+
+  private Map<Block, List<BlockDrop>> blockDrops = new HashMap<>();
+
+  @Override
+  public void onEnable() {
+    GameCore.registerEvents(this);
+  }
+
+  @Override
+  public void onDisable() {
+    HandlerList.unregisterAll(this);
+  }
+
+  public void addBlockDrop(Block block, BlockDrop blockDrop) {
+    blockDrops.putIfAbsent(block, new ArrayList<>());
+    blockDrops.get(block).add(blockDrop);
+  }
+
+  /**
+   * Handles block drops when a block is broken by a player.
+   *
+   * @param event The event
+   */
+  @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+  public void onBlockBreak(BlockBreakEvent event) {
+    Block block = event.getBlock();
+    if (blockDrops.containsKey(block)) {
+      List<BlockDrop> blockDrops = this.blockDrops.get(block);
+
+      Location location = block.getLocation().add(0.5, 0.5, 0.5);
+      World world = location.getWorld();
+      boolean override = false;
+      for (BlockDrop blockDrop : blockDrops) {
+        world.dropItem(location, blockDrop.getItem());
+        if (blockDrop.isOverride()) {
+          override = true;
+        }
+      }
+      if (override) {
+        event.setCancelled(true);
+        block.setType(Material.AIR);
+
+        //Any experience that was previously going to be dropped will still be dropped, despite the event being
+        //cancelled
+        int xp = event.getExpToDrop();
+        if (xp != 0) {
+          ExperienceOrb xpOrb = world.spawn(location, ExperienceOrb.class);
+          xpOrb.setExperience(xp);
+        }
+      }
+    }
+  }
+
+  //TODO: Implement block drops for when the block is broken due to an entity explosion (creeper, TNT, etc.)
+
+}

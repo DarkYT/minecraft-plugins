@@ -1,0 +1,83 @@
+Launchpads:
+  Velocity: 4
+  Message: "&aWOOSH !"
+  MsgEnabled: true
+  Sound: BLOCK_PISTON_EXTEND
+Menu:
+  Name: "&9&lServeurs"
+  Size: 45
+  Even: 4
+  Odd: 1
+  Message: "&aVous avez été téléporté sur le serveur &6%server%&a."
+  Servers:
+    Skyblock:
+      Name: "&9Serveur &6Skyblock"
+      Type: SERVER
+      Bungee: skyblock
+      Lore: 
+        1: "&7Description à venir..."
+      Item: DIRT
+      Data: 2
+      Position: 11
+    Hub:
+      Name: "&9Serveur &bLobby"
+      Type: COMMAND
+      Command: hubspawn
+      Lore: 
+        1: "&7Description à venir..."
+      Item: BED
+      Data: 14
+      Position: 14
+    Event:
+      Name: "&9Serveur &aEvents"
+      Type: SERVER
+      Bungee: events
+      Lore: 
+        1: "&7Description à venir..."
+      Item: GLOWSTONE_DUST
+      Data: 0
+      Position: 17
+    CTF:
+      Name: "&9Serveur &eCaptureTheFlag"
+      Type: MESSAGE
+      Message: "&cCe serveur est actuellement indisponible."
+      Lore: 
+        1: "&7Description à venir..."
+      Item: BANNER
+      Data: 1
+      Position: 29
+    RP:
+      Name: "&9Serveur &2RolePlay"
+      Type: MESSAGE
+      Message: "&cCe serveur est actuellement indisponible."
+      Lore: 
+        1: "&7Description à venir..."
+      Item: DIAMOND_HOE
+      Data: 0
+      Position: 35
+Items:
+  Menu:
+    Name: "&9&lServeurs"
+    Type: MENU
+    Menu: SERVERS
+    Lore: 
+      1: "&fDescription à venir..."
+    Item: ENDER_CHEST
+    Data: 0
+    Position: 5
+  Shop:
+    Name: "&b&lBoutique"
+    Type: MENU
+    Menu: SHOP
+    Lore: 
+      1: "&fDescription à venir..."
+    Item: DIAMOND
+    Data: 0
+    Position: 7
+Spawn:
+  Set: "&aVous avez défini le spawn à votre position !"
+  Warped: "&aVous avez été téléporté au spawn."
+  Void: 27
+  Grabbed: "&7Hep ! Reviens par ici toi ! :)"
+  NoPerm: "&cVous n'avez pas la permission d'exécuter cette commande."
+  Reloaded: "&aLa configuration du plugin a été rechargée."

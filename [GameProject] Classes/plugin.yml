@@ -1,0 +1,7 @@
+name: Classes
+version: 0.0.1
+author: Dark
+main: fr.dark.classes.Core
+depend: [iDisguise]
+commands:
+  class:

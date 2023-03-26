@@ -1,0 +1,7 @@
+main: fr.shiick.redshop.RedShop
+author: Shiick
+version: 1.0
+name: RedShop
+commands:
+  shop:
+  shopreload:

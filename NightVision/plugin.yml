@@ -1,0 +1,7 @@
+name: NightVision
+version: 1.0
+author: Dark
+main: fr.darkyt.nightvision.Main
+commands:
+  nv:
+  nvstop: 

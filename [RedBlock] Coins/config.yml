@@ -1,0 +1,35 @@
+MySQL:
+  Protocol: "jdbc:mysql://"
+  Host: "localhost"
+  Database: "Shiick"
+  Username: "root"
+  Password: "Vm8pR2KWwJ5x"
+Coin:
+  Default: 0
+  Hub: true
+Message:
+  Give:
+    Success:
+      Target: "&a[&eCrédits&a] &aVos crédits ont été augmentés de &e%increment%&a. &7Crédits &8| &e%coins%"
+      Sender: "&a[&eCrédits&a] &aVous avez donné &e%increment% &acrédits à &c%target%&a. &7Crédits de &c%target% &8| &e%coins%"
+    Usage: "&c/coins <pseudo> give <nombre>"
+  Remove:
+    Success:
+      Target: "&a[&eCrédits&a] &aVos crédits ont été réduits de &e%increment%&a. &7Crédits &8| &e%coins%"
+      Sender: "&a[&eCrédits&a] &aVous avez retiré &e%increment% &acrédits à &c%target%&a. &7Crédits de &c%target% &8| &e%coins%"
+    Usage: "&c/coins <pseudo> remove <nombre>"
+  Set:
+    Success:
+      Target: "&a[&eCrédits&a] &aVos crédits ont été définis à &e%coins%&a."
+      Sender: "&a[&eCrédits&a] &aVous avez définis à &e%coins% &ales crédits de &c%target%&a."
+    Usage: "&c/coins <pseudo> set <nombre>"
+  Reset:
+    Success:
+      Target: "&a[&eCrédits&a] &aVos crédits ont été réinitialisés."
+      Sender: "&a[&eCrédits&a] &aVous avez réinitialisés les crédits de &c%target%&a."
+  Divers:
+    Money: "&7Crédits &8| &e%coins%"
+    MoneyTarget: "&7Crédits de &c%target% &8| &e%coins%"
+    NoPerm: "&a[&eCrédits&a] &cVous n'avez pas la permission d'exécuter cette commande."
+    Disconnected: "&a[&eCrédits&a] &cLe joueur que vous essayez d'atteindre est déconnecté."
+    Reloaded: "&aLa configuration du plugin a été rechargée."

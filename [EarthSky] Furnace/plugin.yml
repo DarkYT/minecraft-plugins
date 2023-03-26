@@ -1,0 +1,6 @@
+name: FurnaceES
+version: 1.0
+author: EarthSky
+main: fr.earthsky.furnace.Core
+commands:
+  four:

@@ -1,0 +1,7 @@
+name: BedWars
+version: 0.1
+author: Dark
+main: fr.dark.bedwars.BedWars
+commands:
+  bedwars:
+    aliases: [bw]

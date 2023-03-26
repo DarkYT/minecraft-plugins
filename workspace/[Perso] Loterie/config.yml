@@ -1,0 +1,6 @@
+Loterie:
+  Coef: 5
+  TicketPrice: 5
+  Time: 12/00 #Indique bien heure/minute
+  TicketPerPlayer: 5
+  

@@ -1,0 +1,6 @@
+name: ConvertES
+version: 1.0
+author: EarthSky
+main: fr.earthsky.convert.Core
+commands:
+  convert:

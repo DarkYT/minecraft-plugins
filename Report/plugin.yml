@@ -1,0 +1,6 @@
+name: Report
+version: 1.0
+author: Dark
+main: fr.darkyt.report.Main
+commands:
+  report:

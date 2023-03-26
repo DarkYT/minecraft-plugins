@@ -1,0 +1,6 @@
+name: StellVote
+version: 1.0
+author: Dark
+main: fr.stellaria.vote.Core
+commands:
+  vote:

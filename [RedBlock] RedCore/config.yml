@@ -1,0 +1,39 @@
+Message:
+  NoPerm: "&cVous n'avez pas la permission d'exécuter cette commande."
+  Spam: "&cLe spam est interdit sur nos serveurs."
+  Vanish:
+    Add: "&aVous venez d'activer le vanish. Les joueurs ne peuvent désormais plus voir."
+    Remove: "&cVous venez de désactiver le vanish. Les joueurs peuvent désormais vous voir."
+    Reload: "&cUn reload vous a rendu visible aux yeux des joueurs."
+  DisallowedCommand: "&cCette commande est désactivé dans ce monde."
+  KillONoob:
+    Broadcast: "&6[&eIntervention &bDivine&6]&7 » &c%target% &7s'est fait &ctuer &7par le &6Dieu &cKill&6'&bo &enoob &4&l!"
+    Recieved: "&6[&eIntervention &bDivine&6]&7 » &7Vous avez reçu le &cKill&6'&bo &enoob&7."
+    Full: "&6[&eIntervention &bDivine&6]&7 » &cVotre inventaire est plein."
+    Block: "&6[&eIntervention &bDivine&6]&7 » Que le tonerre soit !"
+  NetherSethome:
+    Created: "&9[&4NetherSethome&9] &aVotre home a bien été enregistré."
+    Unsafe: "&9[&4NetherSethome&9] &cVotre home n'est pas sécurisé."
+    WrondWorld: "&9[&4NetherSethome&9] &cMonde invalide."
+  Hide:
+    Hidden: "&cVous ne pouvez pas parler quand vous êtes en invisible."
+  NoPlugins: "&cIl n'y a rien à voir ici."
+  NoBridge: "&cNT. GG EZ. NOOB."
+  Reload: "&aLa configuration du plugin a été rechargée."
+Items:
+  KillONoob:
+    Material: BLAZE_ROD
+    Data: 0
+    Name: "&cKill&6'&bo &enoob"
+    Lore:
+      1: "&7A mort les noobs !"
+NetherSethome:
+  Skyblock: "world_iles"
+  Nether: "world_iles_nether"
+Sounds:
+  WARN: ENTITY_EVOCATION_ILLAGER_PREPARE_WOLOLO
+  KICK: ITEM_SHIELD_BREAK
+  BAN: BLOCK_END_PORTAL_SPAWN
+  MUTE: ENTITY_SHULKER_AMBIENT
+  UNBAN: ITEM_TOTEM_USE
+  UNMUTE: ENTITY_LLAMA_AMBIENT

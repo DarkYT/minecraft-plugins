@@ -1,0 +1,17 @@
+Messages:
+  Command:
+    Confirm: "&eVous trouvez-vous bien devant la porte ?"
+    Reload: "&a[RamPlugin] Reload Effectué"
+    View:
+      Intro: "&6Voici les coordonnées des différents Béliers de la map"
+      DispMess: "&6  - Un Bélier aux coordonnées suivantes =&e X:<X> ; Y:<Y> ; Z:<Z>"
+    Help:
+      - "&6<<&m-----&r&9 Bélier Kidéchir &6&m-----&r&6>>"
+      - "&6/ram view &eVous affiche la liste des Béliers présents sur la map"
+      - "&6/ram set &ePermet de poser un Bélier"
+      - "&6/ram help &eVous ouvre ce menu"
+      - "&6/ram reload &eReload la config du plugin"
+      - "&6<<&m-----&r&9 Bélier Kidéchir &6&m-----&r&6>>"
+    Deny:
+      Console: "&cT'es une putain de console '-' NOOB !"
+      Command: "&cT'as pas le droit !! Nanananèreuu"

@@ -1,0 +1,6 @@
+name: ShopAmbre
+version: 0.0.1
+author: Shiick
+main: fr.shiick.shopambre.Core
+commands:
+  achat: 

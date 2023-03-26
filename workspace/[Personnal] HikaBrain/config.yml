@@ -1,0 +1,15 @@
+Teams:
+  red:
+    name: "Rouge"
+    tag: "&c"
+    spawn: "7.418;28;53.508;-90.4;10.6"
+    world: world
+    data: 14
+  blue:
+    name: "Bleu"
+    tag: "&9"
+    spawn: "45.632;28;53.576;90.3;10.6"
+    world: world
+    data: 11
+spawn: "80;4;54.904"
+maxblocks: 30

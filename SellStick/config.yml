@@ -1,0 +1,22 @@
+####Sell Stick by shmkane###
+#
+#The name of the item - displayname
+DisplayName: '&cSellStick'
+ItemType: STICK
+Only_In_Own_Territory: true
+StickLore:
+- '&c&lLeft&c click on a chest to sell items inside!'
+- '&cSellStick by &oshmkane'
+
+SkyblockWorld: 'world_iles'
+SkyblockNetherWorld: 'world_iles_nether'
+WrongWorldMessage: '&cVous n':e:tes pas dans le bon monde pour utiliser le sellstick.'
+FiniteLore: '&c%remaining% &fremaining uses'
+InfiniteLore: '&4Infinite &cuses!'
+MessagePrefix: '&6[&eSellStick&6] &e'
+SellMessage: '&cYou sold items for &f%price% &cand now have &f%balance%'
+NoPermissionMessage: '&cSorry, you don''t have permission for this!'
+InvalidTerritoryMessage: '&cYou can''t use sell stick outside your territory!'
+NotWorthMessage: '&cNothing worth selling inside'
+BrokenStick: '&cYour sellstick broke!(Ran out of uses)'
+UseEssentialsWorth: false

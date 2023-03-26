@@ -1,0 +1,6 @@
+name: HelpMe
+version: 1.0
+author: Dark
+main: fr.darkyt.helpme.Main
+commands:
+  helpme:

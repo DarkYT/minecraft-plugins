@@ -1,0 +1,327 @@
+SellStick:
+  #Configuration de l'item du SellStick
+  Item:
+    Name: "&cHuissier"
+    Type: "BLAZE_ROD"
+    Lore:
+      - "&e• &6Bâton &7permettant la &cVente &6Rapide"
+      - "&7des &aRessources &7de &6vos &eCoffres &4&l!"
+    #Elle sera dans le lore, je la met juste à part pour faciliter les choses
+    DurabilityLoreString: "&c➜&6&l <dura> &r&eutilisation(s) &crestante(s)"
+  #Différents messages présents dans le plugin
+  Messages:
+    Getting: "&a[&2RedBlock&a] &2Vous venez d'obtenir le SellStick"
+    SellAll: "&2Vous venez de vendre tout le contenu de votre coffre pour <price> pièces"
+    Reload: "&a[&2RedBlock&a] &2Vous venez de reload la config"
+    NoPerm: "&c[&4RedBlock&c] &4Vous n'avez pas les permissions requises"
+    wrongIsland: "&c[&4RedBlock&c] &4Vous n'êtes pas sur votre île !"
+    Usage: "&c[&4RedBlock&c] &4Mauvais usage: &c/sellstick give <player> <quantité> <durabilité>"
+    Player: "&c[&4RedBlock&c] &4Ce joueur n'existe pas"
+    UsagesNull: "&c[&4RedBlock&c] &4Vous n'avez plus de durabilité sur votre SellStick"
+    EmptyChest: "&cVotre coffre ne contient aucun item vendable"
+  #Liste de tous les items vendables
+  SalableItems:
+    Item1:
+      Type: CARROT_ITEM
+      Data: 0
+      Price: 15
+    Item2:
+      Type: COOKED_BEEF
+      Data: 0
+      Price: 20
+    Item3:
+      Type: DIAMOND
+      Data: 0
+      Price: 400
+    Item4:
+      Type: MELON_BLOCK
+      Data: 0
+      Price: 10
+    Item5:
+      Type: PUMPKIN
+      Data: 0
+      Price: 8
+    Item6:
+      Type: WHEAT
+      Data: 0
+      Price: 7
+    Item7:
+      Type: POTATO
+      Data: 0
+      Price: 6
+    Item8:
+      Type: CARROT
+      Data: 0
+      Price: 6
+    Item9:
+      Type: SUGAR_CANE
+      Data: 0
+      Price: 5
+    Item10:
+      Type: CACTUS
+      Data: 0
+      Price: 3
+    Item11:
+      Type: RED_MUSHROOM
+      Data: 0
+      Price: 5
+    Item12:
+      Type: CHORUS_FRUIT
+      Data: 0
+      Price: 15
+    Item13:
+      Type: INK_SACK
+      Data: 3
+      Price: 10
+    Item14:
+      Type: BEETROOT
+      Data: 0
+      Price: 6
+    Item15:
+      Type: NETHER_STALK
+      Data: 0
+      Price: 6
+    Item16:
+      Type: BROWN_MUSHROOM
+      Data: 0
+      Price: 20
+    Item17:
+      Type: SAPLING
+      Data: 0
+      Price: 15
+    Item18:
+      Type: SAPLING
+      Data: 1
+      Price: 15
+    Item19:
+      Type: SAPLING
+      Data: 2
+      Price: 15
+    Item20:
+      Type: SAPLING
+      Data: 3
+      Price: 15
+    Item21:
+      Type: SAPLING
+      Data: 4
+      Price: 30
+    Item22:
+      Type: SAPLING
+      Data: 5
+      Price: 30
+    Item23:
+      Type: EMERALD
+      Data: 0
+      Price: 75
+    Item24:
+      Type: GOLD_INGOT
+      Data: 0
+      Price: 100
+    Item25:
+      Type: IRON_INGOT
+      Data: 0
+      Price: 50
+    Item26:
+      Type: INK_SACK
+      Data: 4
+      Price: 40
+    Item27:
+      Type: REDSTONE
+      Data: 0
+      Price: 35
+    Item28:
+      Type: COAL
+      Data: 0
+      Price: 30
+    Item29:
+      Type: DIAMOND_BLOCK
+      Data: 0
+      Price: 3600
+    Item30:
+      Type: EMERALD_BLOCK
+      Data: 0
+      Price: 675
+    Item31:
+      Type: GOLD_BLOCK
+      Data: 0
+      Price: 900
+    Item32:
+      Type: IRON_BLOCK
+      Data: 0
+      Price: 450
+    Item33:
+      Type: REDSTONE_BLOCK
+      Data: 0
+      Price: 315
+    Item34:
+      Type: COAL_BLOCK
+      Data: 0
+      Price: 270
+    Item35:
+      Type: COBBLESTONE
+      Data: 0
+      Price: 5
+    Item36:
+      Type: STONE
+      Data: 0
+      Price: 7.5
+    Item37:
+      Type: STONE
+      Data: 5
+      Price: 10
+    Item38:
+      Type: STONE
+      Data: 1
+      Price: 10
+    Item39:
+      Type: STONE
+      Data: 3
+      Price: 10
+    Item40:
+      Type: DIRT
+      Data: 0
+      Price: 15
+    Item41:
+      Type: GRASS
+      Data: 0
+      Price: 20
+    Item42:
+      Type: LOG
+      Data: 0
+      Price: 10
+    Item43:
+      Type: LOG
+      Data: 2
+      Price: 10
+    Item44:
+      Type: LOG
+      Data: 1
+      Price: 10
+    Item45:
+      Type: LOG
+      Data: 3
+      Price: 10
+    Item46:
+      Type: LOG_2
+      Data: 0
+      Price: 15
+    Item47:
+      Type: LOG_2
+      Data: 1
+      Price: 15
+    Item48:
+      Type: SNOW
+      Data: 0
+      Price: 5
+    Item49:
+      Type: ICE
+      Data: 0
+      Price: 5
+    Item50:
+      Type: PORK
+      Data: 0
+      Price: 5
+    Item51:
+      Type: RAW_CHICKEN
+      Data: 0
+      Price: 3.75
+    Item52:
+      Type: MUTTON
+      Data: 0
+      Price: 10
+    Item53:
+      Type: RAW_BEEF
+      Data: 0
+      Price: 6.25
+    Item54:
+      Type: RABBIT
+      Data: 0
+      Price: 8.75
+    Item55:
+      Type: RABBIT_HIDE
+      Data: 0
+      Price: 8.75
+    Item56:
+      Type: LEATHER
+      Data: 0
+      Price: 6.25
+    Item57:
+      Type: ROTTEN_FLESH
+      Data: 0
+      Price: 5
+    Item58:
+      Type: BONE
+      Data: 0
+      Price: 3.75
+    Item59:
+      Type: ARROW
+      Data: 0
+      Price: 3.75
+    Item60:
+      Type: STRING
+      Data: 0
+      Price: 5
+    Item61:
+      Type: FEATHER
+      Data: 0
+      Price: 3.75
+    Item62:
+      Type: SPIDER_EYE
+      Data: 0
+      Price: 10
+    Item63:
+      Type: INK_SACK
+      data: 0
+      Price: 15
+    Item64:
+      Type: GOLD_NUGGET
+      Data: 0
+      Price: 11
+    Item65:
+      Type: SULPHUR
+      Data: 0
+      Price: 12.5
+    Item66:
+      Type: SLIME_BALL
+      Data: 0
+      Price: 3.5
+    Item67:
+      Type: PRISMARINE_SHARD
+      Data: 0
+      Price: 10
+    Item68:
+      Type: PRISMARINE_CRYSTALS
+      Data: 0
+      Price: 10
+    Item69:
+      Type: RAW_FISH
+      Data: 0
+      Price: 10
+    Item70:
+      Type: RAW_FISH
+      Data: 1
+      Price: 20
+    Item71:
+      Type: EGG
+      Data: 0
+      Price: 10
+    Item72:
+      Type: BLAZE_ROD
+      Data: 0
+      Price: 30
+    Item73:
+      Type: COOKED_RABBIT
+      Data: 0
+      Price: 30
+    Item74:
+      Type: ENDER_PEARL
+      Data: 0
+      Price: 40
+    Item75:
+      Type: RAW_FISH
+      Data: 3
+      Price: 250
+    Item76:
+      Type: GHAST_TEAR
+      Data: 0
+      Price: 500

@@ -1,0 +1,46 @@
+CTF:
+  Join:
+    Message: "&a[&2+&a] &2<player> vient de se connecter au serveur CTF !"
+    setCreaGMtoOp: true
+  Editor:
+    isNotEditor: "&c[&4CTF&c] &4Vous n'êtes pas Editeur !"
+    isPlaying: "&c[&4CTF&c] &4Le jeu a commencé, vous ne pouvez pas éditer !"
+    itemName:
+      Catapulte: "&8Catapulte"
+      Belier: "&8Belier"
+      Door: "&8Door"
+      Baliste: "&8Baliste"
+    wrongUsage:
+      General: "&c[&4CTF&c] &4Mauvais usage: &c/ctfedit <machine> &4pour voir son utilisation"
+      Door: "&c[&4CTF&c] &4Mauvais usage: &c/ctfedit door <longueur (1, 2, 3...)> <hauteur (1, 2, 3...)> <modèle>"
+      wrongMachine: "&c[&4CTF&c] &4Mauvaise machine: &c/ctfedit <catapulte/belier/porte/baliste>"
+      wrongDirection: "&c[&4CTF&c] &4Mauvaise direction: &c/ctfedit <machine> <north/south/east/west>"
+      wrongModele: "&4Différents modèles: &cHerse (herse); Pont-Levis (levis)"
+  Command:
+    Reload: "&a[&2CTF&a] &2Reload effectué !"
+    Editor:
+      Set: "&a[&2CTF&a] &2Vous êtes désormais Editeur !"
+      Remove: "&a[&2CTF&a] &2Vous n'êtes désormais plus Editeur !"
+    Spawn:
+      Set: "&a[&2CTF&a] &2Le spawn est désormais définit à votre position !"
+      Teleport: "&a[&2CTF&a] &2Vous venez de vous téléporter au spawn !"
+    Help:
+      Op:
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+        - "&6/ctf edit &eVous active/désactive le mode Edition du serveur"
+        - "&6/ctf setspawn &eDéfinie le spawn à votre position"
+        - "&6/ctf spawn &eVous téléporte au spawn"
+        - "&6/ctf help &eOuvre ce menu"
+        - "&6/ctf reload &eReload le plugin"
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+      notOp:
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+        - "&6/ctf spawn &eVous téléporte au spawn"
+        - "&6/ctf help &eOuvre ce menu"
+        - "&6<<&m-----&r&9 CaptureTheFlag &6&m-----&r&6>>"
+    Deny:
+      Console: "&4Tu es une console, banane !"
+  Spawn:
+
+Doors:
+  'Default':

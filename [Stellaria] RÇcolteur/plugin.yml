@@ -1,0 +1,8 @@
+name: StellRecolt
+version: 1.0.0
+author: DarkEfkabe
+main: fr.efkabe.recolteur.Main
+commands:
+  recharge:
+  lost:
+  rgive:

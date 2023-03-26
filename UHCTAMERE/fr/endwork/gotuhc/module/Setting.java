@@ -1,0 +1,20 @@
+package fr.endwork.gotuhc.module;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * Defines a setting for a module.
+ */
+@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Setting {
+
+  /**
+   * @return A unique, human-readable description of the setting
+   */
+  String value();
+
+}

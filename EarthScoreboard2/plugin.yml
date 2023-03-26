@@ -1,0 +1,4 @@
+name: Scoreboard
+main: fr.earthsky.scoreboard.EarthScoreboard
+author: EarthSky
+version: 1.0
